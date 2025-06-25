@@ -1,0 +1,119 @@
+:root {
+    --verde-oliva-escuro: #606C38;
+    --verde-escuro: #283618;
+    --creme-claro: #FEFAE0;
+    --amarelo-mostarda: #DDA15E;
+    --marrom: #BC6C25;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--verde-oliva-escuro);
+    color: var(--creme-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--amarelo-mostarda);
+    font-size: 2.5rem;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.btn-logout {
+    background-color: var(--marrom);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--creme-claro);
+}
+
+#adminContainer {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--creme-claro);
+    color: var(--verde-escuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#resumo {
+    margin-bottom: 30px;
+}
+
+#resumo h1 {
+    font-size: 1.8rem;
+    color: var(--verde-escuro);
+    margin-bottom: 15px;
+}
+
+#resumo p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#resumo span {
+    font-weight: bold;
+}
+
+.control-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+button {
+    background-color: var(--amarelo-mostarda);
+    color: var(--verde-escuro);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--marrom);
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #adminContainer {
+        width: 90%;
+    }
+
+    .control-section {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

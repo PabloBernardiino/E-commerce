@@ -1,0 +1,136 @@
+:root {
+    --verde-oliva-escuro: #606C38;
+    --verde-escuro: #283618;
+    --creme-claro: #FEFAE0;
+    --amarelo-mostarda: #DDA15E;
+    --marrom: #BC6C25;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--verde-oliva-escuro);
+    color: var(--creme-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: var(--amarelo-mostarda);
+    font-size: 2.5rem;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .btn-logout {
+    background-color: var(--marrom);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--creme-claro);
+  }
+  
+  #produtosContainer {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: var(--creme-claro);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  .btn-add {
+    background-color: var(--marrom);
+    padding: 5% 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--creme-claro);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--verde-oliva-escuro);
+  }
+  
+  th {
+    background-color: var(--verde-escuro);
+    color: var(--creme-claro);
+  }
+  
+  td {
+    color: var(--verde-escuro);
+  }
+  
+  tr:hover {
+    background-color: var(--amarelo-mostarda);
+  }
+  
+  .btn-carrinho {
+    background-color: var(--amarelo-mostarda);
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    color: var(--creme-claro);
+  }
+  
+  .btn-carrinho:hover {
+    background-color: var(--verde-escuro);
+  }
+  
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .btn-logout {
+      margin-top: 10px;
+    }
+  
+    #produtosContainer {
+      width: 90%;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    .btn-carrinho {
+      width: 90%;
+    }
+  }

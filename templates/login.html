@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Cadastro</title>
+  <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+  <div id="loginCadastroContainer">
+    <div id="loginFormContainer">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="emailLogin">E-mail:</label>
+        <input type="email" id="emailLogin" name="emailLogin" required><br><br>
+
+        <label for="senhaLogin">Senha:</label>
+        <input type="password" id="senhaLogin" name="senhaLogin" required><br><br>
+
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+      <button id="mostrarCadastroBtn" class="btn-switch">Não tem conta ? Cadastre-se</button>
+    </div>
+
+    <div id="cadastroFormContainer" style="display:none;">
+      <h2>Cadastrar</h2>
+      <form id="cadastroForm">
+        <label for="nomeCadastro">Nome:</label>
+        <input type="text" id="nomeCadastro" name="nomeCadastro" required><br><br>
+
+        <label for="emailCadastro">E-mail:</label>
+        <input type="email" id="emailCadastro" name="emailCadastro" required><br><br>
+
+        <label for="senhaCadastro">Senha:</label>
+        <input type="password" id="senhaCadastro" name="senhaCadastro" required><br><br>
+
+        <label for="tipoCadastro">Tipo de Usuário:</label>
+        <select id="tipoCadastro" name="tipoCadastro" required>
+          <option value="admin">Administrador</option>
+          <option value="cliente">Cliente</option>
+        </select><br><br>
+
+        <button type="submit" class="btn-register">Cadastrar</button>
+      </form>
+      <button id="mostrarLoginBtn" class="btn-switch">Já tem uma conta? Faça login</button>
+    </div>
+  </div>
+
+<script src="../site/static/js/login.js"></script>
+
+</body>
+</html>

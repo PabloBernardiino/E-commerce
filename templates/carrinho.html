@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho</title>
+    <link rel="stylesheet" href="../static/css/carrinho.css">
+</head>
+<body>
+    <div id="carrinhoContainer">
+        <h2>Meu Carrinho</h2>
+        <button id="voltarbtn" class="botao" >Voltar</button>
+        <input type="text" id="nomePedido" placeholder="Nome do Pedido">
+
+        <table id="carrinhoTabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor Unitário(R$)</th>
+                    <th>Quantidade</th>
+                    <th>Valor Total(R$)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <h2>Total: R$ <span id="totalCarrinho">0.00</span></h2>
+
+        <button id="realizarPedidoBtn" class="botao" onclick="realizarPedido()" >Realizar Pedido</button>
+    </div>
+
+    <script src="../static/js/carrinho.js"></script>
+</body>
+</html>

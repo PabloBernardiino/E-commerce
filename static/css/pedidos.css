@@ -1,0 +1,129 @@
+:root {
+    --verde-oliva-escuro: #606C38;
+    --verde-escuro: #283618;
+    --creme-claro: #FEFAE0;
+    --amarelo-mostarda: #DDA15E;
+    --marrom: #BC6C25;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--creme-claro);
+    color: var(--verde-escuro);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: var(--verde-oliva-escuro);
+    margin-top: 20px;
+}
+
+button {
+    background-color: var(--marrom);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--amarelo-mostarda);
+}
+
+#voltar {
+    background-color: var(--verde-escuro);
+    margin-left: 10px;
+}
+
+#voltar:hover {
+    background-color: var(--verde-oliva-escuro);
+}
+
+#pedidoContainer {
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--creme-claro);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--verde-escuro);
+}
+
+th {
+    background-color: var(--verde-escuro);
+    color: white;
+}
+
+td {
+    background-color: var(--creme-claro);
+}
+
+.btn-pagar {
+    background-color: var(--amarelo-mostarda);
+    color: white;
+}
+
+.btn-cancelar {
+    background-color: var(--marrom);
+    color: white;
+}
+
+.btn-pagar:hover,
+.btn-cancelar:hover {
+    opacity: 0.8;
+}
+
+#pedidosTabela tbody td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

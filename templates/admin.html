@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="../static/css/admin.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Controle de Produtos</h1>
+        <button id="logoutBtn" class="btn-logout" >Sair</button>
+      </div>
+
+    <div id="adminContainer">
+        <h1>Painel do Administrador</h1>
+        <div id="resumo">
+            <h1>Resumo Administrativo</h1>
+            <p>Total de Clientes: <span id="total-clientes">Carregando...</span></p>
+            <p>Total de Vendas Finalizadas: <span id="total-vendas-finalizadas">Carregando...</span></p>
+            <p>Total de Vendas em Andamento: <span id="total-vendas-andamento">Carregando...</span></p>
+            <p>Total de Vendas Canceladas: <span id="total-vendas-canceladas">Carregando...</span></p>
+        </div>
+        
+        <div class="control-section">
+            <button onclick="window.location.href='/admin/produtos'">Controle de Produtos</button>
+            <button onclick="window.location.href='/admin/clientes'">Controle de Clientes</button>
+        </div>
+    </div>
+    <script src="../static/js/admin.js"></script>
+</body>
+</html>

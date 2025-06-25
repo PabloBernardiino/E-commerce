@@ -1,0 +1,77 @@
+:root {
+    --verde-oliva-escuro: #606C38;
+    --verde-escuro: #283618;
+    --creme-claro: #FEFAE0;
+    --amarelo-mostarda: #DDA15E;
+    --marrom: #BC6C25;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--verde-oliva-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#loginCadastroContainer {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--creme-claro);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: var(--verde-escuro);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--verde-escuro);
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--creme-claro);
+}
+
+.btn-login {
+    background-color: var(--amarelo-mostarda);
+}
+
+.btn-register {
+    background-color: var(--marrom);
+}
+
+.btn-switch {
+    background-color: var(--verde-escuro);
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+    #loginCadastroContainer {
+        width: 90%;
+    }
+}

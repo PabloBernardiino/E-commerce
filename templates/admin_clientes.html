@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Clientes</title>
+    <link rel="stylesheet" href="../static/css/admin_clientes.css">
+</head>
+<body>
+
+    <div id="header">
+      <h1>Controle de Clientes</h1>
+      <button id="voltarBtn" class="btn-voltar">Voltar</button>
+    </div>
+  
+    <h2>Lista de Clientes</h2>
+    <div id="clientesContainer">
+      <table id="clientesTable">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Quantidade de Pedidos</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+    <div id="pedidoModal" style="display:none;">
+      <div class="modal-content">
+          <h3>Detalhes do Pedido</h3>
+          <div id="produtosLista"></div> <!-- Onde os produtos serão exibidos -->
+          <p><strong>Quantidade Total:</strong> <span id="quantidadeTotal"></span></p>
+          <p><strong>Valor Total:</strong> R$ <span id="valorTotal"></span></p>
+          <button onclick="fecharModal()">Fechar</button>
+      </div>
+  </div>
+    
+
+    <script src="../static/js/admin_clientes.js"></script>
+</body>
+</html>
